@@ -20,7 +20,70 @@
   <navbar>
     <a href="index.html"> Inicio</a>  |  <a href="educacion.html">Educación</a>  |  <a href="experiencia.html">Experiencia</a>
   </navbar>
+<p><h2>Educación</h2></p>
+<table border="3" cellpadding="10" cellspacing="2">
+    <thead>
+      <tr>
+        <th>Estudios</th>
+        <th>Institucion</th>
+        <th>Año</th>
+        <th>¿Culmino?</th>
+        <th>Documento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lic. Informatica Administrativa</td>
+        <td>UAEM</td>
+        <td>2002</td>
+        <td>Si</td>
+        <td>Título</td>
+      </tr>
+      <tr>
+        <td>Preparatoria</td>
+        <td>Preparatoria, Regional de Atlacomulco, <br> Prof. Carlos Hank Gonzalez.</td>
+        <td>1997</td>
+        <td>Si</td>
+        <td>Certificado</td>
+      </tr>
+      <tr>
+        <td>Secundaria</td>
+        <td>Secundaria Técnica No. 13, <br> Prof. Andres Molina Enriquez.</td>
+        <td>1994</td>
+        <td>Si</td>
+        <td>Certificado</td>
+      </tr>
+    </tbody>
+</table> <br><br>
 
+<fieldset>
+  <h1>Agregar Estudios</h1>
+    <p>
+    <label for="estudios"><strong>Estudios</strong></label><br>
+    <input type="text" name="estudios" placeholder="Ej. Preparatoria" autofocus required>
+    </p>
+    <p>
+    <label for="institucion"><strong>Institucion</strong></label><br>
+    <input type="text" name="institucion" placeholder="Ej. UAEM" autofocus required>
+    </p>
+    <p>
+    <label for="año"><strong>Año</strong></label><br>
+    <input type="number" name="año" min="1900" max="2020" step="1" value="2017">
+    </p>
+    <p>
+    <label for="culmino"><strong>¿Culmino?:</strong></label><br>
+    <input type="radio" name="culmino">Si<br>
+    <input type="radio" name="culmino">No
+    </p>
+    <p>
+    <label for="Documento"><strong>Documento:</strong></label><br>
+    <select name="documento">
+      <option value="1">Título</option>
+      <option value="1">Certificado</option>
+    </select>
+    </p>
+    <input type="submit" value="Enviar">
+</fieldset>
 
   <footer>
   <p>
